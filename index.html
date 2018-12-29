@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>易眠</title>
+	<link rel="stylesheet" href="css/index/style.css">
+	<script>
+        var pixelRatio = 1 / window.devicePixelRatio;
+        document.write('<meta name="viewport" content="width=device-width,initial-scale=' + pixelRatio + ',minimum-scale=' + pixelRatio + ',maximum-scale=' + pixelRatio + '" />');
+        var html = document.getElementsByTagName('html')[0];
+        var pageWidth = html.getBoundingClientRect().width;
+        html.style.fontSize = pageWidth / 10 + "px";
+    </script>
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+   <div id="top">
+        <img src="img/biao.png" alt="" id="top1">
+        <div class="zonez">
+        <div id="zoneza">
+<div class="zonea">
+    <ul>
+        <a href="index.html"><li>首页</li></a>
+        <a href="pinpai.html"><li>品牌介绍</li></a>
+        <a href="chanpin.html"><li>易眠产品</li></a>
+        <a href="guanjia.html"><li>睡眠管家</li></a>
+        <a href="zhumian.html"><li>助眠系统</li></a>
+        <a href="xinwen.html"><li>新闻资讯</li></a>
+        <li>招商加盟</li>
+    </ul>
+    </div></div>
+</div>
+    </div>
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/a.jpg" alt="" id="img"></div>
+        <div class="swiper-slide"><img src="img/b.jpg" alt="" id="img"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+     <script src="dist/js/swiper.min.js"></script>
+     <script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical', 
+    autoplay: true, 
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    });
+    </script>
+    <div id="one">
+        <h2 id="one1">E-sleep CSS</h2>
+        <h4 id="one2">易眠舒适系统</h4>
+        <p id="one3">易眠领品，产品加服务，为国人提供更易入眠的<br>睡眠保障系统更符合中国人睡眠习惯</p>
+        <div id="one4">MORE</div>
+        <div id="one5">
+        <div class="block">
+    <ul class="ullist">
+        <li>
+           
+        <img src="img/c.jpg" id="img1"><p id="two1">E-Sleep<br>Comfort</p>
+           <p id="two2">易眠氛围易眠舒适指数</p></li>
+        <li><img src="img/d.jpg" id="img1"><p id="two1">E-Sleep<br>Sense</p>
+           <p id="two2">易眠氛围</p></li>
+        <li><img src="img/e.jpg" id="img1"><p id="two1">E-Sleep<br>SERVICE</p>
+           <p id="two2">易眠服务</p></li>
+        <li><img src="img/c.jpg" id="img1"><p id="two1">E-Sleep<br>Comfort</p>
+           <p id="two2">易眠氛围易眠舒适指数</p></li>
+    </ul>
+    <div class="banner" >
+        <div class="dian"><img src="img/a1.png" alt="" id="img2"></div>
+        <div class="dian"><img src="img/a2.png" alt="" id="img2"></div>
+        <div class="dian"><img src="img/a3.png" alt="" id="img2"></div>
+    </div>
+    </div>
+  <script>
+    var times;
+    var count=0;
+    window.onload=function() {
+        var ullist = document.getElementsByClassName("ullist")[0];
+        var par = document.getElementsByClassName("block")[0];
+        var dian=document.getElementsByClassName("dian");
+        dian[0].style.border="5/$rem*1rem solid #7C4E23";
+        par.onmouseenter = function () {
+            clearInterval(times);
+        };
+        par.onmouseleave = function () {
+            times = setInterval(function () {
+               imgbo();
+            }, 2000);
+        };
+        times = setInterval(function () {
+            imgbo();
+        }, 2000);
+        for(var i=0;i<dian.length;i++){
+            dian[i].index =i;
+          dian[i].onmouseenter =function(){
+              dian[count].style.border="5/$rem*1rem solid silver";
+              this.style.border="5/$rem*1rem solid #7C4E23";
+              count=this.index;
+              ullist.className="ullist b";
+              ullist.style.marginLeft=(-594*count)+"/$rem*1rem";
+          }
+        }
+        function imgbo() {
+            ullist.className = "ullist b";
+            dian[count].style.border="5/$rem*1rem solid silver";
+            count++;
+
+            ullist.style.marginLeft = (-594 * count) + "/$rem*1rem";
+            setTimeout(function () {
+                if (count > ullist.children.length - 2) {
+                    ullist.className = "ullist";//
+                    count = 0;
+                    ullist.style.marginLeft = "0/$rem*1rem";
+                }
+                dian[count].style.border="5/$rem*1rem solid #7C4E23";
+            }, 500);
+        }
+    }
+</script> 
+</div>
+<div id="for">
+    <div id="for1">
+        <div id="for2">
+            <p id="for2_1">Mattress</p>
+            <p id="for2_2">易眠床垫</p>
+        </div>
+        <div id="for3">
+            <div id="for3_0">
+            <p id="for2_1">Pillow</p>
+            <p id="for2_2">易眠床品</p>
+            </div>
+            <div id="for4">
+                <p id="for4_1">Find<br>more</p>
+            </div>
+        </div>
+    </div>
+    <div id="for5">
+        <p id="for5_1">SOFT BED</p>
+        <p id="for5_2">易眠软床</p>
+    </div>
+    <h2 id="one01">Brand products</h2>
+        <h4 id="one02">易眠产品</h4>
+        <div id="one04">MORE</div>
+</div>
+    <h2 id="one001">Sleep<br>expert</h2>
+        <h4 id="one002">睡眠管家</h4>
+        <ul id="six">
+            <li id="six1">
+                <p id="six_0"><img src="img/i1.png" alt="" id="six_1"></p>
+                <p id="six_2">睡眠顾问</p>
+            </li>
+            <li id="six1">
+                 <p id="six_0"><img src="img/i2.png" alt="" id="six_1"></p>
+                <p id="six_2">服务体系</p>
+            </li>
+            <li id="six1">
+                 <p id="six_0"><img src="img/i3.png" alt="" id="six_1"></p>
+                <p id="six_2">保养知识</p>
+            </li>
+        </ul>
+    <div id="for05"></div>
+    <div id="six2"></div>
+    <p id="wen">ABOUT US</p>
+    <p id="wen1">关于易眠领品</p>
+    <p id="wen2">易眠领品，中国寝具行业Esleep易眠舒适系统的创导者，是中国家具行业领军企业——成都市双虎实业有限公司所推出的高端寝具品牌。为全方位有效的改善困扰国人的入睡难，入深度睡眠难，入高品质睡眠难的问题，以领先国际先进水平的概念和技术，实实在在将每一个与睡眠相关的细节做到极致，并给予了高质量的睡眠整体解决方案，真正满足了消费者容易入眠，轻松获得高品质睡眠的生活需求。</p>
+    <p id="wen3">易眠领品，让入眠变得更容易</p>
+    <ul id="wen4">
+        <li id="wen5">技术支持</li>|
+        <li id="wen5">合作单位</li>|
+        <li id="wen5">招商加盟</li>
+    </ul>
+    <div id="panel">
+    <div id="panel1">双虎官网</div>
+    <div id="panel1">双虎天猫</div>
+    <div id="panel1">中国睡眠研究会</div>
+    <div id="panel1">土耳其康菲特官网</div></div>
+    <p id="shu"></p>
+    <div id="flip">友情链接<p id="jiao"></p></div>
+    <script src="jquery-3.1.1.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("fast");
+  });
+});
+</script>
+    <p id="z">© 2006-2018 yimianlingpin</p>
+    <p id="z1">网站设计：赛门仕博</p>
+    </div>
+</head>
+<body>
+</body>
+</html>
